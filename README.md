@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/Prachii1111/frontend-mentor-3-Column-card)
+- Solution URL: [github repo url](https://github.com/Prachii1111/frontend-mentor-3-Column-card)
 - Live Site URL: [live site URL ](https://prachii1111.github.io/frontend-mentor-3-Column-card/)
 
 ### Built with
