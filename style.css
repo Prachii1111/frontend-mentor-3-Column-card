@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-one: hsl(31, 77%, 52%);
+    --color-two: hsl(184, 100%, 22%);
+    --color-three: hsl(179, 100%, 13%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Big Shoulders", sans-serif;
+    padding: 10px;
+}
+
+.container {
+    background-color: hsl(0, 0%, 95%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.card:nth-child(1) {
+    background-color: var(--color-one);
+    border-radius: 8px 8px 0px 0px;
+}
+
+.card:nth-child(2) {
+    background-color: var(--color-two);
+}
+
+.card:nth-child(3) {
+    background-color: var(--color-three);
+    border-radius: 0px 0px 8px 8px;
+}
+
+.card img {
+    width: 40px;
+    object-fit: cover;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+
+p {
+    font-family: "Lexend Deca", sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 1.7;
+}
+
+.card a {
+    margin-top: auto;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    padding: 0.75rem 1.5625rem;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, 
+                color 0.3s ease, 
+                border 0.3s ease;
+}
+
+.card:nth-child(1) a { color: var(--color-one); }
+.card:nth-child(2) a { color: var(--color-two); }
+.card:nth-child(3) a { color: var(--color-three); }
+
+
+.card a:hover {
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: transparent;
+    color: white;
+}
+
+
+@media(min-width: 768px) {
+    .container {
+        width: 100%;
+        box-shadow: none;
+        background-color: transparent;
+        flex-direction: row;
+    }
+
+    .card {
+        gap: 30px;
+    }
+
+    .card a {
+        margin-top: 20px;
+    }
+
+    .card:nth-child(1) {
+        border-radius: 8px 0px 0px 8px;
+    }
+
+    .card:nth-child(3) {
+        border-radius: 0px 8px 8px 0px; 
+    }
+}
